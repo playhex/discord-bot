@@ -1,0 +1,23 @@
+{
+  "name": "playhex-discord-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PlayHex Discord bot: /analyze any Hex game",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.ts",
+    "register-commands": "node --env-file-if-exists=.env src/registerCommands.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "dependencies": {
+    "discord.js": "^14.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
